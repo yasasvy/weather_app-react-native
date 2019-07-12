@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Image, View, Text } from 'react-native';
+import { Image, View, Text, StyleSheet } from 'react-native';
 
 class Blink extends Component {
 
@@ -21,7 +21,7 @@ class Blink extends Component {
     }
 
     return (
-      <Text style={{fontSize:20}}>{this.props.text}</Text>
+      <Text style={styles.a}>{this.props.text}</Text>
     );
   }
 }
@@ -37,3 +37,10 @@ export default class App extends Component {
   }
 }
 
+const styles = StyleSheet.create({
+  a: {
+    fontSize: 20,
+    color: '#9400d3'
+    
+  }
+});
